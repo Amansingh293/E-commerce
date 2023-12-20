@@ -13,9 +13,9 @@
   gap: 4%;
   padding-left: 2%;
   padding-right: 1%;
-  /* color: white; */
+  color: white;
   height: 8vh;
-  background-color: #fec89a;
+  background-color: #404040;
   width: auto;
 }
 
@@ -23,7 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: white;
   font-weight: 700;
   font-size: larger;
   text-decoration: none;
@@ -77,7 +77,7 @@
 
 .addBtn {
   /* color: white; */
-  background-color: #fec89a;
+  background-color: #f6bd60;
   height: 2rem;
   width: 70%;
   padding: 1%;
