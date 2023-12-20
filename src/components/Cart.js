@@ -16,7 +16,7 @@ function Cart() {
     return (
         <div className='cartContainer'>
 
-            { cartItems.length === 0 ? <div>No Items in Cart !!</div> : cartItems.map((product) => (
+            { cartItems.length === 0 ? <div style={{fontSize: "29px"}}>No Items in Cart !!</div> : cartItems.map((product) => (
                 <div key={product.id} className='cartItem'>
                     <img src={product.image} className='cartItemImage'></img>
                     <h3 className='cartTitle'>{product.title}</h3>
