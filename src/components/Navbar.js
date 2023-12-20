@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
 import {NavLink} from 'react-router-dom';
-
+import { BsCart3 } from "react-icons/bs";
 
 
 export default function Navbar() {
@@ -18,11 +18,8 @@ export default function Navbar() {
         <div className='navBtns' >
             <NavLink to="/" className="links">Home </NavLink>
 
-            <NavLink to="/cart" className="links"> Cart </NavLink>
+            <NavLink to="/cart" className="links"> <BsCart3 style={{fontSize: "25px"}}/> : {items.length}</NavLink>
 
-            <div className="links" >
-                CartItems : {items.length}
-            </div>
         </div>
         
     </div>

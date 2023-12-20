@@ -25,8 +25,6 @@ function Cart() {
                 </div>
             ))}
         
-
-
         </div>
     )
 }

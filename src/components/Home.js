@@ -3,7 +3,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { add } from "../Slices/cart";
-
+import Card from "./Card";
 
 export default function Home() {
 
@@ -28,16 +28,7 @@ export default function Home() {
 
   return (
     <div className="cardContainer">
-      {products.map((product) => (
-        <div key={product.id} className="card">
-          <img src={product.image} className="cardImage" alt=""></img>
-          <p className="cardTitle">{product.title}</p>
-          <p className="cardPrice">Rs: {product.price*100}</p>
-          <button className="addBtn" onClick={()=> addHandler(product)}>
-            Add to cart
-          </button>
-        </div>
-      ))}
+      {(products.length===0) ? <div style={{fontSize: "29px"}}>Loading....</div> : products.map((product) =><Card product = {product} addHandler = {addHandler}/>) }
     </div>
   );
 }
