@@ -6,6 +6,36 @@
   height: fit-content;
   width: fit-content;
 }
+
+.loaderParent {
+  background-color: black;
+  position: fixed;
+  inset: 0;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loader {
+  height: 50px;
+  width: 50px;
+  border: 5px solid;
+  border-radius: 50%;
+  border-top: 4px solid yellow;
+  border-left: 4px solid yellow;
+  animation: loader-animation 0.7s infinite;
+}
+
+@keyframes loader-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -122,7 +152,8 @@
   background-color: rgba(255, 253, 247, 0.774);
   border-radius: 10px;
   border: 0.4px solid black;
-  box-shadow: 3px 3px 3px 3px gray;}
+  box-shadow: 3px 3px 3px 3px gray;
+}
 
 .cartItemImage {
   border-radius: 10px;

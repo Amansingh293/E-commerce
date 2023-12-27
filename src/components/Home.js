@@ -29,7 +29,9 @@ export default function Home() {
   return (
     <div className="cardContainer">
       {products.length === 0 ? (
-        <div style={{ fontSize: "29px" }}>Loading....</div>
+        <div className="loaderParent">
+          <div className="loader"></div>
+        </div>
       ) : (
         products.map((product) => (
           <Card product={product} addHandler={addHandler} />
